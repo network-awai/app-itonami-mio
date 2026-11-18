@@ -1,17 +1,17 @@
 {
   "jobs": [
     {
-      "base_url": "https://api.murakumo.cloud/v1",
+      "base_url": "https://openrouter.ai/api/v1",
       "context_from": null,
       "deliver": "local",
       "enabled": true,
       "enabled_toolsets": null,
       "id": "cdf3ddc90608",
-      "model": "mishima",
+      "model": "xiaomi/mimo-v2.6-pro",
       "name": "zeta-l5-pulse",
       "no_agent": false,
       "prompt": "zeta-l5-pulse: L5 Proof-of-Useful-Delivery 監視 pulse。最初に差分検知をする: 前回 state ~/.hermes/profiles/zeta/cron/zeta-l5-pulse.state.json と比較し、変化が無ければ 差分なし の1行だけ出して終了。変化があった項目だけ深掘り報告。対象: (1) NKN Proof of Relay https://docs.nkn.org/docs/proof-of-relay (2) AIOZ Vision Paper V2 PoD https://aioz.network/blog/aioz-network-vision-paper-v2-building-a-unified-depin-layer-powered-by-people (3) Filecoin PDP https://www.filecoin.io/blog/introducing-proof-of-data-possession-pdp-verifiable-hot-storage-on-filecoin — 各URLから headline・日付・proof 名の変化を拾い state に記録。捏造ゼロ: 取れなかった項目は unknown と書く。Proof of Bandwidth / Proof of Latency / Proof of Useful Delivery を主題とする新規論文・白書は URL 付きで列挙。web_search を使う。観測のみで実装・提案はしない。",
-      "provider": "murakumo",
+      "provider": "openrouter",
       "schedule": {
         "kind": "cron",
         "expr": "2 */6 * * *",
